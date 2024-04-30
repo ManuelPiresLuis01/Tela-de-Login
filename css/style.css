@@ -1,0 +1,189 @@
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: url(../imgs/img-3.jpeg) no-repeat;
+}
+
+a {
+    display: block;
+    color: #c0bebe;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #969696;
+}
+
+.container {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.img {
+    width: 50%;
+}
+
+.img img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.div-login {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #00000083;
+    width: 50%;
+    text-align: center;
+    color: #c0bebe;
+}
+
+input {
+    padding: 8px;
+    border-radius: 10px;
+    margin: 8px;
+    width: 70%;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+h1 { 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 40%;
+    background: none;
+    padding: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    color: #c0bebe;
+    transition: .5s;
+    font-size: 20px;
+    border-left: 1px solid #44c5443d;
+    border-bottom: 1px solid #44c5443d;
+    border-right: 1px solid #44c5443d;
+}
+
+.upi {
+    margin-top: 10px;
+}
+
+button:hover {
+    width: 70%;
+    background-color: #44c5443d;
+    color: white;
+}
+
+.logar-cadastrar {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    color: white;
+}
+
+h3 {
+    margin-top: 20px;
+    transition: .3s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: #c0bebe;
+
+}
+
+form {
+    width: 100%;
+}
+
+h3:hover {
+    padding: 5px;
+    background-color: #44c5443d;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form {
+    display: flex;
+}
+
+.log {
+    width: 0%;
+    overflow: hidden;
+    transition: .9s;
+}
+
+.cadastro {
+    width: 100%;
+    transition: .9s;
+}
+
+.log.troca {
+    width: 100%;
+}
+
+.cadastro.troca1 {
+    width: 0%;
+    overflow: hidden;
+
+}
+
+select{
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:800px) {
+    .img {
+        display: none;
+    }
+
+    .container {
+        background: none;
+        box-shadow: none;
+    }
+
+    .um {
+        border-top-left-radius: 50px;
+    }
+
+    .dois {
+        border-top-right-radius: 50px;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    .div-login {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50px;
+
+    }
+}
